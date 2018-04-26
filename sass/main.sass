@@ -1,0 +1,466 @@
+@import "bourbon"
+@import "_var"
+@import "..//app/libs/Magnific-Popup/magnific-popup.sass"
+@import "..//app/libs/owl/assets/owl.carousel.sass"
+
+*::-webkit-input-placeholder
+	color: #555
+	opacity: 1
+
+*:-moz-placeholder
+	color: #555
+	opacity: 1
+
+*::-moz-placeholder
+	color: #555
+	opacity: 1
+
+*:-ms-input-placeholder
+	color: #555
+	opacity: 1
+
+body input:focus:required:invalid,
+body textarea:focus:required:invalid
+	color: #555
+body input:required:valid,
+body textarea:required:valid
+	color: #555
+
+//Custom Styles Here
+
+//section_1
+
+.section_1
+	background-color: #fff
+.section_head
+	padding-top: 90px
+	text-align: center
+	margin-bottom: 70px
+	p
+		margin-top: 50px
+		font-size: em(18px)
+		animation-delay: .4s
+	h2
+		position: relative
+		&::after
+			position: absolute
+			content: ''
+			height: 2px
+			background-color: #555555
+			width: 50px
+			display: block
+			border-radius: 1px
+			bottom: -25px
+			left: 50%
+			transform: translate(-50%, 0)
+
+.section_pb
+	padding-bottom: 86px
+	animation-delay: .6s
+
+.icons
+	text-align: center
+	.icon
+		h3
+			margin-top: 25px
+
+		.icon_wrap
+			display: inline-block
+			transition: all .5s ease
+			&:hover
+				transition: all .5s ease
+				transform: translateY(-5px)			
+	.ellipse
+		width: 90px
+		height: 90px
+		border: 2px solid #dddddd
+		border-radius: 10em
+		img
+			margin-top: 18px
+	.ellipse_1
+		background-color: $main-color
+		@extend .ellipse
+		img
+			margin-top: 23px
+	.ellipse_2
+		@extend .ellipse
+		img
+			width: 53px
+			margin-top: 23px
+
+//section_2
+
+.before
+	content: ""
+	width: 100%
+	height: 100%
+	position: absolute
+	left: 0
+	top: 0
+
+
+.grey_sect
+	background-color: #f8f8f8
+	.section_head
+		margin-bottom: 56px
+
+
+.team_members
+	margin-top: 44px
+	text-align: center
+
+	.owl-carousel
+		.owl-stage-outer
+			padding-bottom: 87px
+		.owl-nav
+			position: absolute
+			top: 40%
+			width: 100%
+			z-index: 3
+			> div
+				height: 14px
+				width: 8px
+				background-image: url(img/slider_arrows.png) 
+				position: absolute
+				left: 25px
+			.owl-next
+				position: absolute
+				margin: 7px 14px
+				right: 15px
+				left: auto
+				background-color: #000
+				background-position: -8px 0
+			.owl-prev
+				position: absolute
+				z-index: 3
+		
+	.sliders
+		position: relativea
+		z-index: 0
+		.team_name
+			margin: 15px 0 0 40px
+			position: relative
+			text-align: center
+			display: inline-block
+			p
+				margin-top: 5px
+				font-size: em(14px)
+		.slider
+			width: 263px
+			height: 250px
+			position: relative
+			display: block
+			margin-top: 14px
+			img
+				width: 263px
+				height: 250px
+			
+.socials
+	width: 263px
+	height: 250px
+	position: absolute
+	margin: -336px 0 0 15px
+	z-index: 1
+	&::before
+		@extend .before
+		background-color: #000
+		opacity: .40
+	.social
+		margin: 180px 0 0 18px
+		display: inline-block
+		z-index: 2
+		li
+			height: 28px
+			width: 28px
+			position: relative
+			display: inline-block
+			text-align: center
+			&:hover
+				background-color: $main-color
+		
+
+//section_3
+
+.section_3
+	
+	.li_mnu
+		font-size: em(17px)
+		ul
+			list-style-type: none
+			margin-top: 60px
+			padding: 0
+		li
+			line-height: 18px
+			padding-right: 29px
+			display: inline-block
+			&.active
+				a
+					color: $main-color
+		a
+			margin: 0 10px
+			color: #555555
+			animation-delay: .4s
+		a:hover
+			text-decoration: none
+			color: $main-color
+	img
+		position: relative
+
+.img_wrap
+	overflow: hidden
+	display: inline-block
+	height: 320px
+	width: 360px
+	margin: 12px 0 
+	position: relative
+
+.level_1
+	.img_wrap_1
+		&::before
+			@extend .before
+			height: 320px
+			width: 360px
+			z-index: 1
+			background-color: $main-color
+			opacity: .70
+	.cont
+		margin: 115px 0 0 56px
+		color: #fff
+		position: absolute
+		text-align: center
+		display: block
+		z-index: 2
+		h3
+			text-transform: capitalize
+			font-size: em(20px)
+		p
+			font-size: em(14px)
+			margin: 0 0 25px
+
+	
+
+	.buttons
+		font-family: "RobotoSlabRegular", $helvetica
+		color: $main-color
+		font-size: em(15px)
+		top: 0px
+		left: 0px
+		img
+			top: -2px
+			left: 10px
+		background-color: #fff
+		width: 100px
+		height: 38px
+		border: 2px solid #fff
+		transition: all .25s ease
+		&:hover
+			background-color: #fff
+			color: $main-color
+
+//section_4
+
+.section_4
+	background-image: url(img/sect_red.png)
+	background-position-y: 70%
+	background-size: cover
+	min-height: 370px
+	.section_red
+		position: relative
+		&::before
+			@extend .before
+			background-color: $main-color
+			opacity: .60
+		.sect_red
+			text-align: center
+			padding-bottom: 20px
+			p
+
+				color: #fff
+				font-size: em(32px)
+			position: relative
+			padding-top: 72px
+			z-index: 1
+		.button-wrap
+			padding-bottom: 100px
+			.buttons
+				text-align: center
+				z-index: 1
+
+//section_5
+
+.section_5
+	.section_head
+		margin-bottom: 30px
+	.section_pb
+		padding-bottom: 60px
+	.blogs
+		.post
+			margin: 40px 0 40px 0
+			.on
+				font-family: "RobotoSlabBold", $helvetica
+				font-size: em(15px)
+				width: 100px
+				margin-top: 20px
+				&:hover
+					color: $main-color
+			.content
+				margin: -65px 0 40px 100px 
+				i
+					font-size: em(14px)
+					color: #777777
+				h3
+					font-size: em(18px)
+					letter-spacing: em(0.2)
+			.date
+				color: #777777
+				font-family: "Montserrat-Bold", $helvetica
+				font-size: em(16px)
+				text-transform: uppercase
+				letter-spacing: 2px
+				p
+					font-size: em(26px)
+					margin: 15px 0 0
+				text-align: center
+				height: 75px
+				width: 75px
+				border: 2px solid #555555
+			.post_1
+				i
+					span
+						color: $main-color
+				h3
+					color: $main-color
+				display: block
+				float: left
+
+			.img_wrap
+				margin: 0 25px 0 0
+				height: 320px	
+				width: 460px
+				display: inline-block
+
+
+//section_6
+
+.section_6
+	padding-top: 80px
+	.slids
+		text-align: center
+		margin-bottom: 20px
+		.owl-dot
+			width: 15px
+			height: 15px
+			margin: 0 3px
+			background-color: #ddd
+			display: inline-block
+			border-radius: 10em
+			&.active
+				background-color: $main-color
+		.slid
+			line-height: 30px
+			p
+				font-size: em(20px)
+			.member
+				margin: 32px 0 
+				p
+					font-size: em(22px)
+
+	.clients_logo
+		padding: 20px 0 90px 0
+		.logo_1
+			top: 10px
+
+//section_7
+
+.section_7
+
+	.contacts
+		.contact
+			position: relative
+			.text
+				margin: -21px 0 30px 30px
+				p
+					font-size: em(14px)
+	.col-md-8
+		padding: 0
+
+	.forms
+		position: relative
+		.content
+			left: 34px
+			font-size: em(13.8px)
+			span
+				color: $main-color
+		.buttons
+			color: #555555
+			border: 1px solid #555555
+			left: 16px
+			top: 15px
+			&:hover
+				background-color: $main-color
+				color: #fff
+				border: 1px solid #fff
+
+		.form
+			color: #555555
+			position: relative
+			height: 42px
+			margin: 15px 15px
+			padding: 0
+			display: block
+			
+		.form_1
+			width: 350px
+		.massage
+			height: 103px
+			width: 730px
+
+		input
+			color: #555555
+			text-indent: 15px
+			font-size: em(14px)
+			padding: 0
+			width: 100%
+			height: 100%
+			border: 1px solid #555555
+			&:focus
+				color: #555555
+				border: 1px solid $main-color
+
+//footer
+
+.main-footer
+	background-color: $main-color
+	.section_head
+		p
+			font-size: em(14px)
+			color: #fff
+			&::before
+				position: absolute
+				content: ''
+				height: 2px
+				background-color: #fff
+				width: 50px
+				display: block
+				border-radius: 1px
+				top: -30px
+				left: 50%
+				transform: translate(-50%, 0)
+	.social
+		margin-right: 50px
+		display: inline-block
+		li
+			margin-left: 14px
+			height: 33px
+			width: 33px
+			border: 2px solid #fff
+			border-radius: 2em
+			position: relative
+			display: inline-block
+			text-align: center
+			background-image: transparent
+
+
+
+//ALWAYS END
+@import "_media.sass"
