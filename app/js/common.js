@@ -6,16 +6,37 @@ $(document).ready(function() {
 	});
 
 	$(".owl-carousel").owlCarousel({
-		items: 4,
+
 		loop:true,
-		nav:true,
 		navText: "",
+		responsive:{
+			0:{
+					items: 1,
+
+			},
+			580:{
+					items: 2,
+
+			},
+			768:{
+					items: 2,
+
+			},
+			992:{
+					items: 3
+
+			},
+			1200:{
+					items: 4,
+					nav:true,
+			},
+		},
 	});
 
 	$(".slids").owlCarousel({
-		items: 1,
 		loop:true,
-	
+		items : 1,
+		
 	});
 
 	$(".section_head p, .section_head h2, .section_head a, .section_pb").animated("fadeInUp");
